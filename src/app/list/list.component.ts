@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Client } from '../interfaces/Client';
 
 @Component({
   selector: 'app-list',

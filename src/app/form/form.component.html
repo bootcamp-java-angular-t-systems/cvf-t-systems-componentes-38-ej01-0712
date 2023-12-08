@@ -16,6 +16,15 @@
       <input type="text" id="address" formControlName="address" />
     </div>
     <br />
+    <div class="form-group">
+      <label for="group">Group:</label><br />
+      <select id="group" formControlName="group">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <br />
     <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">
       Enviar
     </button>

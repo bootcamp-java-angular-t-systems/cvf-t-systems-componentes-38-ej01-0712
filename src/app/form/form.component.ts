@@ -18,7 +18,8 @@ export class FormComponent {
     this.myForm = this.formBuilder.group({
       name: '',
       cif: '',
-      address: ''
+      address: '',
+      group: '',
     });
   }
 
