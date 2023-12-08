@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h1>Crear clientes</h1>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="mt-3">
+    <div class="form-group">
+      <label for="name">Nombre:</label><br />
+      <input type="text" id="name" formControlName="name" />
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="cif">CIF:</label><br />
+      <input type="text" id="cif" formControlName="cif" />
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="address">Dirección:</label><br />
+      <input type="text" id="address" formControlName="address" />
+    </div>
+    <br />
+    <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">
+      Enviar
+    </button>
+  </form>
+</div>

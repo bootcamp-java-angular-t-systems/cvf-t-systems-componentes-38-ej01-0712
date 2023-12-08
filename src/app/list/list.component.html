@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <h1>Lista de clientes</h1>
+
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Cif</th>
+          <th scope="col">Direccion</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (client of clients; track $index) {
+            <tr>
+            <td>{{ client.name }}</td>
+            <td>{{ client.cif }}</td>
+            <td>{{ client.address }}</td>
+            </tr>
+        }
+      </tbody>
+    </table>
+</div>

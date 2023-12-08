@@ -1,8 +1,9 @@
 <main class="main">
-  <div class="content">
-    <button class="btn btn-success">Superboton</button>
-    <app-test></app-test>
-  </div>
+
+  <app-form (clientRegistered)="handleClientRegistered($event)"></app-form>
+
+  <app-list [clients]="clientsApp"></app-list>
+
 </main>
 
 <router-outlet></router-outlet>
